@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateAccount">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txv_update_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="CẬP NHẬT TÀI KHOẢN"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="32dp"
+            />
+        <TextView
+            android:id="@+id/txv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Để sử dụng dịch vụ của DAIKIN Việt Nam. Vui lòng cập nhật thông tin tài khoản"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/roboto"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HỌ TÊN"
+            android:fontFamily="@font/roboto"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="   Nhập họ và tên"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/rectangle"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GIỚI TÍNH"
+            android:fontFamily="@font/roboto"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/black"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:text="Nam"
+                android:gravity="center"
+                android:fontFamily="@font/roboto"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:background="@drawable/rectangle"
+            />
+            <TextView
+                android:gravity="center"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:text="Nữ"
+                android:fontFamily="@font/roboto"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rectangle"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TỈNH - THÀNH PHỐ"
+            android:fontFamily="@font/roboto"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="   Tỉnh Hòa Bình"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/rectangle"
+            android:drawableEnd="@drawable/arrow_down"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUẬN - HUYỆN"
+            android:fontFamily="@font/roboto"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="   Chọn Quận - Huyện"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/rectangle"
+            android:drawableEnd="@drawable/arrow_down"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHƯỜNG - XÃ"
+            android:fontFamily="@font/roboto"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="   Chọn Phường - Xã"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/rectangle"
+            android:drawableEnd="@drawable/arrow_down"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ĐỊA - CHỈ"
+            android:fontFamily="@font/roboto"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="   Nhập địa chỉ"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/rectangle"
+            />
+
+        <TextView
+            android:id="@+id/txv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="50dp"
+            android:text="Số điện thoại không đúng?Đăng nhập"
+            android:textStyle="bold"
+            android:textColor="@color/verification"
+            android:textSize="16sp" />
+        <Button
+           android:id="@+id/bt_tt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="#00a1e4"
+            android:fontFamily="@font/roboto"
+            android:text="Tiếp Tục"
+            android:textSize="16sp"
+            app:backgroundTint="#00a1e4"
+            android:textAlignment="textStart"
+            android:drawableEnd="@drawable/img_tieptuc_12"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="32dp"/>
+
+    </LinearLayout>
+</ScrollView>

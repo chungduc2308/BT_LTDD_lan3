@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:background="@drawable/ic_wave"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Xin chào, bùi chung đức"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav"
+        app:itemTextColor="#000"/>
+    <ScrollView
+        android:id="@+id/homepage_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/homepage_ly_Rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp">
+
+                    <ImageView
+                        android:id="@+id/baotri"
+                        android:layout_width="64dp"
+                        android:layout_height="58dp"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="0dp"
+                        android:src="@drawable/settings_1"
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bảo trì"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="113dp"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/suachua_409"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/maintenance"
+                        android:layout_margin="8dp"
+
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sửa chữa"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="225dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp">
+
+                    <ImageView
+                        android:id="@+id/eshop"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/e_shop"
+                        android:layout_margin="8dp"
+
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E-Shop"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="120dp">
+
+                    <ImageView
+                        android:id="@+id/phukien"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/accessory"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phụ kiện"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="90dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginLeft="113dp">
+
+                    <ImageView
+                        android:id="@+id/zalo_409"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/chat"
+                        android:layout_margin="8dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zalo us"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/chonthietbi"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="295dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/lifebuoy"
+                        android:layout_marginTop="16dp"/>
+
+                    <TextView
+                        android:id="@+id/chonthietbi_409"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:drawableRight="@drawable/right_arrow"
+                        android:text="Làm sao để chọn dịch vụ, thiết bị đúng"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ViewFlipper
+                android:id="@+id/filip_409"
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="380dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_rounded_corner"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="570dp"
+                app:cardCornerRadius="8dp">
+                <GridView
+                    android:id="@+id/grid"
+                    android:layout_width="320dp"
+                    android:numColumns="2"
+                    android:layout_height="600dp"
+                    android:layout_centerHorizontal="true"
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
